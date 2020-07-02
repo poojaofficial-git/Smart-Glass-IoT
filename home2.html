@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="blog.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Smart Glasses</title>
+</head>
+
+<body>
+      <!-- Modal -->
+      <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="signupModalLabel">Get an Account</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1"
+                              aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                              else.</small>
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleInputPassword1">Re-Enter Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Join us and get updates!</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Create Account</button>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+              </div>
+          </div>
+      </div>
+  </div>
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <button type="button" class="btn btn-dark btn-sm" ><a href="pricing.html">Buy our Project</a></button>
+                </div>
+                <div class="col-3 text-center">
+                    <a class="blog-header-logo text-dark" href="index.html">Smart Glasses</a>
+                </div>
+                <div class="col-5 d-flex justify-content-end align-items-center">
+                    <!-- <a class="p-2 text-muted" href="#">Contact Us</a> -->
+                    <!-- <a class="p-4 text-muted" href="#" href="#">Buy our Project</a> -->
+
+                    <a button class="btn btn-success" data-toggle="modal" data-target="#signupModal">Sign Up</a>
+                </div>
+
+            </div>
+        </header>
+
+        <div class=" nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" href="index.html#modes" >Model Design</a>
+                <a class="p-2 text-muted" href="index.html#hreq">Hardware Requirements</a>
+                <a class="p-2 text-muted" href="#soft">Software Hardware Interfacing</a>
+                <a class="p-2 text-muted" href="#andro">Android Application</a>
+                <a class="p-2 text-muted" href="#ardu">Arduino</a>
+                <a class="p-2 text-muted" href="#futu">Future Scopes</a>
+
+
+            </nav>
+        </div>
+        <div class="jumbotron">
+            <h1 class="display-4" href="#">Deep Dive into Smart Glasses</h1>
+            <p class="lead">What in the world are smart glasses? Simply put, they are an attempt to bring the wireless connectivity and imaging we enjoy 
+                on our home computers and cellphones into the frames and lenses of our eyewear.
+                Just as we can no longer imagine living without a laptop or mobile phone, soon we may enjoy the same versatility and connectivity from our eyeglasses, and even our contact lenses. 
+                Quite an eye-opener, wouldn’t you say? </p>
+            <!-- <hr class="my-4"> -->
+            <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+            <a class="btn btn-primary btn-lg" href="index.html" role="button">Go Back</a>
+        </div>
+        <div class="container">
+            <h2 id="soft" name="soft">Software Hardware Interfacing</h2>
+
+            <ul>
+                <li class="lead">Google’s Android operating system,Android Studio is the
+                    main and official integrated development environment
+                    (IDE) , built on JetBrains’ IntelliJ IDEA software which
+                    is designed only for Android development.
+                    It is available for download on Windows, macOS and
+                    Linux based operating systems.It has replaced the Eclipse
+                    Android Development Tools (ADT) which was a primary
+                    IDE for native Android application development.
+                    Kotlin is also a language used for app development
+                    which is a replacement of Java as Google’s preferred
+                    language for Android app development.</li>
+                <li class="lead">When we connect the android app with the HC-05
+                    bluetooth of Smart Glass, the device will send the data
+                    which is in the form of strings to the Arduino through
+                    Bluetooth.The data in the form of Strings includes current
+                    Date and Time and also incoming call or text is transmitted.The transmitted data is received by
+                    Arduino which is
+                    then displayed on OLED screen.
+                </li>
+
+            </ul>
+            <img src="secpage.png" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="row featurette my-4">
+            <div class="col-md-7">
+                <h2 id="andro" name="andro" class="featurette-heading my-4">The Android Application section</h2>
+                <p class="lead">• Now we move on to the Android Application Part.
+                    Establishing a connection is based on the client-server
+                    model. The server socket is created by server which waits
+                    for incoming connection requests, then the client socket
+                    is created by client which sends a connection request to
+                    the server.</p>
+                <p class="lead">• The second socket is generated when server accepts this
+                    request which is used to communicate with this client
+                    which makes it possible to send and receive data both
+                    ways.</p>
+                <p class="lead"> • Set permissions : First, we set the permissions in the
+                    Android Manifest file.Bluetooth and Bluetooth Admin are
+                    needed.</p>
+                <p class="lead">• Check Availability of Bluetooth : We use the Bluetooth
+                    Adapter class to check Bluetooth’s availability. Phone’s
+                    built-in Bluetooth module is represented here. To check
+                    if our device has Bluetooth to start with we will use this
+                    class. To check if Bluetooth is enabled or not, we can
+                    call up the system’s dialog window asking the user if to
+                    turn Bluetooth on.</p>
+            </div>
+            <div class="col-md-5">
+                <img src="appaa.png" class="bd-placeholder-img bd-placeholder-img-lg 
+                featurette-image img-fluid mx-auto" width="500" height="500">
+
+            </div>
+
+
+
+            <div class="container">
+                <div class="card-body">
+                    <h2 id ="ardu" name="ardu" class="featurette-heading">Arduino Section</h2>
+                    <p class="lead">After app is created we transmit the data from phone
+                        to Arduino once it is connected to HC-05 Bluetooth
+                        Module.After data is received by Arduino a code is
+                        written to print the data received from phone to the OLED
+                        screen.We use the AltSoftSerial and Adafruit Libraries to
+                        run the code. </p>
+                    <p class="lead">Receiving data:The Reception of Data is not complicated.Beacuse in
+                        microcontroller Hello world is just LED
+                        blinking but here, Hello World is little bit advanced.It is
+                        Achieved by changing the state of LED as and when Data
+                        is received through Bluetooth.</p>
+                    <p class="lead">Pairing devices:The establishment of Bluetooth connection is done
+                        by pairing them.Device paring takes place
+                        only once.The process looks like this:
+                        Enable the Bluetooth HC-05 of device then it will be
+                        visible to the surrounding.
+                        Then we choose other device when we scan for other device.When Bluetooth Module is detected
+                        Pairing request
+                        is send to other device.A pop-up message is shown up
+                        in our Android Device naturally the password is 1234 or
+                        0000,When the password is right we will see that our
+                        Bluetooth device is in the paired devices section.</p>
+
+                </div>
+                <img src="secpage22.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="container my-4">
+            <div class="card">
+                <div class="card-header">
+                  <h2 id="futu">Future Scopes</h2>
+                </div>
+                <div class="card-body">
+                    <img class ="container" src="glass1.jpg" alt="">
+                  
+                  <p class="lead" class="card-text my-4 "><strong>1.The Small Screen Will Force Those To Adapt To Space Constraints</strong> 
+                  </strong></p><p class="lead">Google Glasses will, of course, have a smaller screen than a PC. But the
+                    glasses will also have a smaller screen than any smart phone on the market. The
+                    viewing area is minimal, and it only resides on the right hand side. Because of this,
+                    everything that is rendered for Google Glass will be incredibly small. This will
+                    create a whole new medium for Web viewing and usability. Google and third-party
+                    interests will need to explore different ways to perform actions and render data.</p>
+                <p class="lead"><strong> 
+
+                    2.Less Browser Changing</strong> </p>
+
+                <p class="lead">
+                Google will, of course, make their browser available first for use through Google
+                    Glass, and this will result in most users sticking with that browser. However, it
+                    is safe to say that new browsers will most likely be introduced later. Regardless,
+                    this will mean more market share for Google-owned browsers.</p>
+
+                <p class="lead"><strong> 
+                3. Less Switching Of Applications</strong> </p>
+
+            <p class="lead">
+            When we are on smart phones, we often switch from app to app to accomplish an
+                    objective. With Google Glass, we can expect to start with a core set of abilities
+                    that are inherent to the operating system. Following this, applications will be
+                    introduced and their use will grow. While this is true, Google will get the first crack
+                    at developing all the functionality needed for the device, much like the advantage
+                    Apple had with the iPhone. If Google can do this well, they will limit the need
+                    for new apps and gain more control of this new market.</p>
+
+                <p class="lead"><strong> 
+                4. A Greater Need For Voice Recognition Technology</strong> </p>
+
+            <p class="lead">
+            Most of the usability in this device is activated based on voice recognition. Google
+                    has improved their abilities here, but voice recognition and activation technology
+                    is still very new and buggy. Google will need to continue to improve and expand
+                    the capabilities of this technology to make the product successful long-term.</p>
+                
+                  <a href="index.html" class="btn btn-primary">Back</a>
+                </div>
+              </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+        <footer class="blog-footer">
+            <p>Project By Pooja, Neha & Rutuja</p>
+                <a href="#">Back to top</a>
+            </p>
+        </footer>
+</body>
+
+
+</html>
